@@ -1,5 +1,7 @@
 # S3 to B2 Transfer Script
 
+[![CI](https://github.com/engineervix/s3tob2/actions/workflows/main.yml/badge.svg)](https://github.com/engineervix/s3tob2/actions/workflows/main.yml)
+
 A Python script to efficiently transfer files from Amazon S3 to Backblaze B2 storage with support for concurrent transfers, checksum verification, and resume capability.
 
 ## Features
@@ -16,8 +18,12 @@ A Python script to efficiently transfer files from Amazon S3 to Backblaze B2 sto
 
 - Python 3.10+
 - Required packages:
+   - boto3
+   - b2sdk
+   - python-dotenv
+
   ```bash
-  pip install boto3 b2sdk python-dotenv
+  pip install -r requirements.txt
   ```
 
 ## Configuration
